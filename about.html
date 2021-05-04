@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl" >
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 20px;
+  
+}
+.imgb {
+border-radius: 50%;
+width:45%;
+}
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.button {
+  border: none;
+  background-color: #d1002c;
+  color: white;
+  height: 45px;
+  text-align: center;
+  font-size: 28px;
+  width: 95%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  direction:rtl;
+  font-family: 'Droid Arabic Kufi', serif;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-left: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+ul li {
+color:#ca5843;
+font-size:110%;
+}
+.blueul {
+color:#416682;
+font-size:130%;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+<span style="margin-right: 0.2%;" class="headernum">خدمة العملاء : 733144555-774555551-771141555</span>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="#home" style="background-color: #fff;"><img src="img/logo.png"  width="150px"/></a>
+  
+  <a href="contant.html" class="lef">اتصل بنا</a>
+
+  <a href="#" class="lef" style="color: #e85e41 !important;">جديد الخدمات</a>
+  <a href="cellpoint.html" class="lef">نقاط البيع</a>
+  <a href="offers.html" class="lef" >الاسعار</a>
+  <a href="login.html" class="lef">الرئيسية</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <img style="width: 30px;" src="img/m.png" />
+  </a>
+</div>
+<br>
+<span style="margin-right: 3%;font-size:130%" class="headernum">خدماتنا</span>
+<span style="float: left;margin-left: 2%;font-size:70%" class="headerfree"><a href="login.html" style="text-decoration: aliceblue;font-size:120%; color:black;">الرئيسية / </a>خدماتنا</span>
+<br>
+<br>
+<div style="background-color: white;">
+<br>
+<br>
+<p style="text-align: center;font-size: 27px;">جديد الخدمات</p>
+<ul>
+    <li class="blueul">خدمة سلفني</li>
+  <li>الان ولأول مرة في عالم الشبكات يمكنك استخدام خدمة سلفني في شبكتنا</li>
+   <li>الخدمة تتيح لك اخذ سلفة عبارة عن ساعتين و 150 ميجا بايت وسدادها في وقت لاحق</li>
+    <li>الخصم يتم بشكل تلقائي عند تعبئتك اي كرت من الفئات المسموحة لها بالسلفة</li>
+	 <li>لاتتفعل الخدمة الا بعد استخدامك 5 كروت او اكثر من بداية تركيب الخدمة</li>
+  <li class="blueul">خدمة اجمع واربح</li>
+    <li>هي خدمة تعطيك كرت مجاني لكل 10 كروت تقوم ب اتمام استخدامهم</li>
+	<li>الخدمة تقوم بعد كل فئة بمفردها وتعطيك كرت بنفس الفئة التي اتممت استخدام 10 كروت فيها</li>
+	<li>العد يكون تلقائيا من النظام ولا داعي لحفظ الكروت الورقية</li>
+	<li>عند حصولك على الكرت المجاني سيقوم النظام ب اعطاء جهازك الكرت وسترى في صفحة معلومات الكرت اشعار يفيدك بأن الكرت الحالي هو كرت مجاني</li>
+  <li class="blueul">خدمة سهر .. قريباً</li>
+  <li>هي خدمة تعطيك زيادة مجانية في جميع فئات الكروت - عدا الاشتراكات - عند قيامك بتعبئة الكرت مابين الساعة الواحدة صباحا وحتى السادسة صباحا</li>
+  <li>الزيادة تكون كالتالي : فئة 100 ريال 15 دقيقة 50 ميجا - فئة 200 ريال 20 دقيقة 70 ميجا - فئة 250 ريال 35 دقيقة 100 ميجا</li>
+    <li class="blueul">خدمة دقائق الجمعة .. قريباً</li>
+  <li>هي خدمة تعطيك دقائق مجانية في جميع فئات الكروت - عدا الاشتراكات - عند قيامك بتعبة الكرت يوم الجمعة مابين الساعة السابعة صباحا والثانية عشر ليلا</li>
+  <li>الزيادة تكون كالتالي : فئة 100 ريال 15 دقيقة 50 ميجا - فئة 200 ريال 20 دقيقة 70 ميجا - فئة 250 ريال 35 دقيقة 100 ميجا</li>
+</ul>  
+<br><br>
+</div>
+
+<div class="footer">
+  <p>للتواصل والاستفسار : 771141555-774555551-733144555</p>
+  <div class="footer topnav" style="background-color:#1d1930; height:90px">
+  <span style="float: right;margin-right: 1%;" class="headernum">Designed by  Ahmed-Alnahari  +967772605107</span>
+<span style=" float: left;margin-left: 2%;" class="headerfree">العودة للاعلى</span>
+</div>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color,color1) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+    tablinks[i].style.color = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+  elmnt.style.color = color1;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

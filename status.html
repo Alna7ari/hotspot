@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl" >
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="10"; url="$(link-status)">
+<link href="css/style.css" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+/* Float four columns side by side */
+.column {
+  float: right;
+  width: 33.3%;
+  padding: 0 10px;
+  color: white;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .buttonform {
+  
+  width: 50% !important;
+  }
+  .onther {
+  margin: 190px 0 0 -50% !important;
+  }
+  .avatar {
+  width: 80px !important;
+  }
+}
+@media screen and (max-width: 510px) {
+  
+  .buttonform {
+  
+  width: 60% !important;
+  }
+  .onther {
+  margin: 190px 0 0 -60% !important;
+  }
+  .avatar {
+  width: 65px !important;
+  }
+  .okey {
+  font-size:15px !important;
+  }
+}
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 20px;
+height: 175px;
+}
+.cardmar {
+margin-bottom: -25px;
+
+
+}
+</style>
+	<script language="JavaScript">
+
+function readablizeBytes(bytes) {
+var s = ['bytes', 'kb', 'MB', 'GB', 'TB', 'PB'];
+var e = Math.floor(Math.log(bytes)/Math.log(1024));
+return (bytes/Math.pow(1024, Math.floor(e))).toFixed(2)+" "+s[e];
+}
+
+</script>
+<script language="JavaScript">
+
+function readablizeBytes(bytes) {
+var s = ['&#1576;&#1575;&#1610;&#1578;', '&#1603;&#1610;&#1604;&#1608;&#1576;&#1575;&#1610;&#1578;', '&#1605;&#1610;&#1580;&#1575;&#1576;&#1575;&#1610;&#1578;', '&#1580;&#1610;&#1580;&#1575;&#1576;&#1575;&#1610;&#1578;', '&#1578;&#1610;&#1585;&#1575;&#1576;&#1575;&#1610;&#1578;', 'PB'];
+var e = Math.floor(Math.log(bytes)/Math.log(1024));
+return (bytes/Math.pow(1024, Math.floor(e))).toFixed(2)+" "+s[e];
+}
+
+</script>
+ <script type='text/javascript' language="javascript">
+ function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname+"="+cvalue+"; "+expires;
+ }
+ function removecookie(){
+  setCookie("uname", "" , 1);
+ }
+
+</script>
+<script type='text/javascript' language="javascript">
+function hideHalfCard(input) {
+    var rv = input.toLowerCase();
+	
+	//hide macs
+	if(rv.indexOf(":") >= 0)
+    {
+        return "اشتراك";
+    }
+	
+    var shown_count = Math.ceil(rv.length / 2);
+
+    rv = rv.substring(shown_count, input.length);
+
+    for (i = 0; i < (input.length - shown_count); i++) {
+        rv += '*';
+    }
+
+    return rv;
+}
+</script>
+</head>
+<body>
+<div class="topnav">
+<span style="margin-right: 0.2%;" class="headernum">خدمة العملاء : 733144555-774555551-771141555</span>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="#home" style="background-color: #fff;"><img src="img/logo.png"  width="150px"/></a>
+  
+  <a href="contant.html" class="lef">اتصل بنا</a>
+
+  <a href="about.html" class="lef">جديد الخدمات</a>
+  <a href="cellpoint.html" class="lef">نقاط البيع</a>
+  <a href="offers.html" class="lef" >الاسعار</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <img style="width: 30px;" src="img/m.png" />
+  </a>
+</div>
+<br>
+$(if session-time-left == 2s)
+
+									  
+										<h3 class="cardmar" style="text-align:center">يقوم النظام الان بفحص السلفة .. اذا كان مسموح لك استخدام السلفة سوف يتم اعطائك السلفة وتحويلك تلقائيا الى صفحة معلومات الكرت</h3>
+										<h3 class="cardmar" style="text-align:center">واذا لم يكن مسموحا لك سيتم اعادتك تلقائيا الى صفحة تسجيل الدخول .. شاكرين تفهمكم</h3>
+									
+									<br><br><br><br>
+									  $(endif)
+			$(if session-time-left == 1s)
+
+										<h3 class="cardmar" style="text-align:center">يقوم النظام الان بفحص السلفة .. اذا كان مسموح لك استخدام السلفة سوف يتم اعطائك السلفة وتحويلك تلقائيا الى صفحة معلومات الكرت</h3>
+										<h3 class="cardmar" style="text-align:center">واذا لم يكن مسموحا لك سيتم اعادتك تلقائيا الى صفحة تسجيل الدخول .. شاكرين تفهمكم</h3>
+										<br><br><br><br>
+									 
+									  $(endif)
+		    $(if session-time-left != 1s )
+			$(if session-time-left != 2s )
+<div style="width: 99%;
+height: 250px;
+background-color: #1c1c38;
+margin: auto;margin-top: -25px;">
+
+
+
+<img src="img/mano.png" class="avatar" style="width: 100px;margin-right: 12px;margin-top: 12px;position: absolute;">
+<span style="position: absolute;margin: 30px 45% 0 0;text-align: center;color: white;" class="okey">تم تسجيل دخولك بنجاح<br> إستخدم الانترنت فيما يرضي الله وتستفيد</span>
+<form name="logout" action="$(link-logout)" method="post" style="max-width: none;">
+<button type="submit" class="buttonform" style="background-color:#d1002c;width: 35%;height: 49px;margin: 130px 0 0 10px;float: left;padding-right: 0;padding-left: 0;">تسجيل الخروج</button>
+</form>
+<form name="erase-cookie" action="$(link-logout)?erase-cookie=on" method="post" style="max-width: none;">
+
+<button onclick="removecookie()" type="submit" class="buttonform onther" style="background-color:#d1002c;width: 35%;height: 49px;margin: 190px 0 0 -35%;float: left;padding-right: 0;padding-left: 0;">الدخول بكرت اخر</button>
+</form>
+</div>
+<br>
+
+<div style="width:90%;margin: auto;">
+
+<div class="row">
+  <div class="column">
+    <div class="card" style="background-color:#6428ae">
+	<h3 class="cardmar">
+	 $(if login-by == 'trial')
+			انت الان تستخدم خدمة (سلفني) سيتم اقتطاع السلفة تلقائيا من اول كرت تقوم بتعبئتة
+			$(endif)
+	$(if login-by == 'mac')
+			مبرووك .. لقد حصلت على هذا الكرت مجانا لاتمامك استخدام 10 كروت
+			$(endif)
+	
+	 </h3>
+	 $(if login-by != 'trial')
+	 $(if login-by != 'mac')
+	<h3 class="cardmar">إسم المستخدم</h3>
+     <br>
+      <p class="cardmar" style="font-family: serif;"><script type="text/javascript">
+                               document.write(hideHalfCard("$(username)"));
+                            </script></p>
+							$(endif)
+							$(endif)
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" style="background-color:#aa134a">
+	
+      <h3 class="cardmar">الوقت المتبقي</h3>
+	  
+     <br>
+	 $(if session-time-left)
+      <p class="cardmar" id="timeLeft">$(session-time-left)</p>$(else) <p class="cardmar">غير محدود</p>$(endif)
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" style="background-color:#d45e42">
+      <h3 class="cardmar">الرصيد المتبقي</h3>
+  <br> $(if remain-bytes-total)
+      <p class="cardmar"><script language="JavaScript">document.write(readablizeBytes($(remain-bytes-total)));</script></p>$(else)  <p class="cardmar">غير محدود</p> $(endif)
+    </div>
+  </div>
+  
+<div class="row">
+  <div class="column">
+    <div class="card" style="background-color:#2cb01e">
+	<h3 class="cardmar">استخدام الجلسة</h3>
+   <br>
+      <p class="cardmar"><script language="JavaScript">document.write(readablizeBytes($(bytes-out)));</script></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" style="background-color:#5a6eeb">
+      <h3 class="cardmar">متصل منذ</h3>
+  <br>
+      <p class="cardmar" id="uptime">$(uptime)</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" style="background-color:#742514">
+      <h3 class="cardmar">الماك ادرس</h3>
+   <br>
+      <p class="cardmar">$(mac)</p>
+    </div>
+  </div>
+  
+
+</div>
+
+</div>
+<br>
+<br>
+$(endif)
+$(endif)
+<div class="footer">
+  <p>للتواصل والاستفسار : 771141555-774555551-733144555</p>
+  <div class="footer topnav" style="background-color:#1d1930; height:90px">
+  <span style="float: right;margin-right: 1%;" class="headernum">Designed by  Ahmed-Alnahari  +967772605107</span>
+<span style=" float: left;margin-left: 2%;" class="headerfree">العودة للاعلى</span>
+</div>
+</div>
+<script type="text/javascript">
+document.getElementById("timeLeft").innerHTML = "$(session-time-left)".replace("w", " أسبوع , ").replace("d", " يوم , ").replace("h", " ساعة , ").replace("m", " دقيقة , ").replace("s", " ثانية");
+</script>
+
+
+<script type="text/javascript">
+document.getElementById("uptime").innerHTML = "$(uptime)".replace("w", " أسبوع , ").replace("d", " يوم , ").replace("h", " ساعة , ").replace("m", " دقيقة , ").replace("s", " ثانية");
+</script>
+<script>
+function openPage(pageName,elmnt,color,color1) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+    tablinks[i].style.color = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+  elmnt.style.color = color1;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

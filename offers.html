@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" >
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+    background-color: #1c1c38;
+}
+
+/* Float four columns side by side */
+.column {
+  float: right;
+  width: 25%;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  
+}
+.imgb {
+border-radius: 50%;
+width:45%;
+}
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 50%;
+    display: block;
+   
+  }
+}
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+    display: block;
+  
+  }
+}
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.button {
+  border: none;
+  background-color: #d1002c;
+  color: white;
+  height: 45px;
+  text-align: center;
+  font-size: 28px;
+  width: 95%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  direction:rtl;
+  font-family: 'Droid Arabic Kufi', serif;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-left: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+</style>
+</head>
+<body>
+<div class="topnav">
+<span style="margin-right: 0.2%;" class="headernum">خدمة العملاء : 733144555-774555551-771141555</span>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="#home" style="background-color: #fff;"><img src="img/logo.png"  width="150px"/></a>
+  
+  <a href="contant.html" class="lef">اتصل بنا</a>
+
+  <a href="about.html" class="lef">جديد الخدمات</a>
+  <a href="cellpoint.html" class="lef">نقاط البيع</a>
+  <a href="#" class="lef" style="color: #e85e41 !important;">الاسعار</a>
+  <a href="login.html" class="lef">الرئيسية</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <img style="width: 30px;" src="img/m.png" />
+  </a>
+</div>
+<br><br>
+<p style="text-align: center;color: #f1f1f1;">جدول العروض</p>
+<br><br>
+<div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+  <img src="img/1.png" class="imgb">
+  <h1>العرض الاول</h1>
+  <p class="title">250 ميجا بايت</p>
+  <p>3 ساعات - 3 ايام</p>
+  <p>السعر <span style="color:#c46c48; font-size: 120%;">100 ريال</span></p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button class="button"><span>إتصل بنا</span></button></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+  <img src="img/2.png" class="imgb">
+  <h1>العرض الثاني</h1>
+  <p class="title">400 ميجا بايت</p>
+  <p>4 ساعات - 4 ايام</p>
+  <p>السعر <span style="color:#c46c48; font-size: 120%;">200 ريال</span></p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button class="button"><span>إتصل بنا</span></button></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+  <img src="img/3.png" class="imgb">
+  <h1>العرض الثالث</h1>
+  <p class="title">500 ميجا بايت</p>
+  <p>5 ساعات - 6 ايام</p>
+  <p>السعر <span style="color:#c46c48; font-size: 120%;">250 ريال</span></p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button class="button"><span>إتصل بنا</span></button></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+  <img src="img/4.png" class="imgb">
+  <h1>العرض الرابع</h1>
+  <p class="title">1 جيجا بايت</p>
+  <p>7 ايام</p>
+  <p>السعر <span style="color:#c46c48; font-size: 120%;">500 ريال</span></p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button class="button"><span>إتصل بنا</span></button></p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+  <img src="img/5.png" class="imgb">
+  <h1>العرض الخامس</h1>
+  <p class="title">4 جيجا بايت</p>
+  <p>30 يوم</p>
+  <p>السعر <span style="color:#c46c48; font-size: 120%;">1500 ريال</span></p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button class="button"><span>إتصل بنا</span></button></p>
+    </div>
+  </div>
+</div>
+<div>
+
+<br><br>
+<div class="footer">
+  <p>للتواصل والاستفسار : 771141555-774555551-733144555</p>
+  <div class="footer topnav" style="background-color:#1d1930; height:90px">
+  <span style="float: right;margin-right: 1%;" class="headernum">Designed by  Ahmed-Alnahari  +967772605107</span>
+<span style=" float: left;margin-left: 2%;" class="headerfree">العودة للاعلى</span>
+</div>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color,color1) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+    tablinks[i].style.color = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+  elmnt.style.color = color1;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

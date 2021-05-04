@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" >
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+/* Float four columns side by side */
+.column {
+  float: right;
+  width: 33.3%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  height: 150px;
+}
+.cardmar {
+margin-bottom: -5px;
+font-size: 90%
+
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+<span style="margin-right: 0.2%;" class="headernum">خدمة العملاء : 733144555-774555551-771141555</span>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="#home" style="background-color: #fff;"><img src="img/logo.png"  width="150px"/></a>
+  
+  <a href="#" class="lef" style="color: #e85e41 !important;">اتصل بنا</a>
+
+  <a href="about.html" class="lef">جديد الخدمات</a>
+  <a href="cellpoint.html" class="lef">نقاط البيع</a>
+  <a href="offers.html" class="lef" >الاسعار</a>
+  <a href="login.html" class="lef">الرئيسية</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <img style="width: 30px;" src="img/m.png" />
+  </a>
+</div>
+<br>
+<span style="margin-right: 3%;font-size:130%" class="headernum">اتصل بنا</span>
+<span style="float: left;margin-left: 2%;font-size:70%" class="headerfree"><a href="login.html" style="text-decoration: aliceblue;font-size:120%; color:black;">الرئيسية / </a>اتصل بنا</span>
+<br>
+<br>
+<div>
+<img src="img/contant.jpg" style="width: 100%;" />
+</div>
+<br>
+<br>
+<p style="text-align: center;font-size: 27px;">تواصل معنا</p>
+<br>
+<br>
+<div style="width:80%;margin: auto;">
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+	<img src="img/loc.png" style="width: 60px;border-radius: 50%;float: right;">
+	<h3 class="cardmar">العنوان</h3>
+      <p class="cardmar">العنوان غير متاح حاليا..</p>
+
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+	<img src="img/phone.png" style="width: 60px;border-radius: 50%;float: right;">
+      <h3 class="cardmar">للتواصل والاستفسار:</h3>
+      <p class="cardmar">771141555-774555551-733144555</p>
+     
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+	<img src="img/email.png" style="width: 60px;border-radius: 50%;float: right;">
+      <h3 class="cardmar">البريد الالكتروني</h3>
+      <p class="cardmar">network@gmail.com</p>
+    </div>
+  </div>
+  
+
+</div>
+
+</div>
+<br>
+<br>
+<div class="footer">
+  <p>للتواصل والاستفسار : 771141555-774555551-733144555</p>
+  <div class="footer topnav" style="background-color:#1d1930; height:90px">
+<span class="headerfree">Designed by  Ahmed-Alnahari  +967772605107</span>
+</div>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color,color1) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+    tablinks[i].style.color = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+  elmnt.style.color = color1;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

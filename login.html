@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl" >
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel="stylesheet">
+<script type='text/javascript' language="javascript">
+	function rem(){
+	     
+            var txtbox = document.getElementById('uname');
+			var str=txtbox.value;
+			txtbox.value=str.toLowerCase();			
+            txtbox.value = txtbox.value.replace(/[^a-z0-9:]/g, "");
+       
+	var uname = document.getElementById('uname').value;
+    var rem   = "true";
+	if(rem == "true"){
+    var date = new Date();
+    date.setTime(date.getTime()+(5*1000));
+    var expires = date.toGMTString();
+    date.setTime(date.getTime()+(259200*1000));
+    var expire  = date.toGMTString();
+    document.cookie = 'uname='+uname+';expires='+expire+'';
+    document.cookie = 'error=1;expires='+expires+'';
+    }
+    else{
+    return;
+    }
+	}
+	function getCookie2(){
+	var date = new Date();
+    date.setTime(date.getTime()+(5*1000));
+    var expires = date.toGMTString();
+    var SP = document.cookie.split(';');
+    for (i=0; i < SP.length; i++) {
+    name_value = SP[i];
+    str = name_value.substring(0,6); 
+    if(str.indexOf("uname") !== -1){
+    uname = name_value.split('=');
+    uname = uname[1];
+    }
+    if(str.indexOf("error") !== -1){
+    return;
+    }
+    }
+    if(uname != ""){
+    document.cookie = 'error=1;expires='+expires+'';
+    window.location.href='login?username='+uname+'';
+    }
+    }
+   getCookie2();
+</script>
+  <script type="text/javascript">
+        
+    </script>
+	<style>
+#alert-back3 {
+position: fixed;
+background-color: rgba(0,0,0,0.75);
+width: 100%;
+height: 100%;
+top:0;
+bottom:0;
+right: 0;
+left: 0;
+z-index: 1000;
+padding-top: 200px;
+}
+.alert3 {
+    position: relative;
+    padding: 20px;
+    background-color: #E85E41;
+    color: white;
+    transition: all 0.3s ease;
+    text-align: right;
+    direction: rtl;
+    width: 50%;
+    margin: 0 auto;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    font-size: 0.9rem;
+    
+}
+
+.closebtn3 {
+    margin-right: 15px;
+    color: white;
+    
+    float: left;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn3:hover {
+    color: black;
+}
+@media screen and (max-width: 700px) {
+.alert3 {
+  width: 90%;
+}
+}
+@media screen and (min-width: 600px) {
+.tablink {
+margin-right: 25%;
+}
+}
+  </style>
+   <script type='text/javascript' language="javascript">
+ function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname+"="+cvalue+"; "+expires;
+ }
+ function removecookie(){
+  setCookie("uname", "T-$(mac)" , 1);
+ }
+
+</script>
+</head>
+
+
+<body>
+$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	
+<script type="text/javascript" src="js/md5.js"></script>
+<script type="text/javascript">
+	<!--
+	    function doLogin() {
+   var uname = document.login.username.value
+   setCookie("uname", uname , 1);
+   setCookie("passw", passw , 1);
+   document.sendin.username.value = uname;
+   document.sendin.password.value = hexMD5('$(chap-id)' + passw + '$(chap-challenge)');
+   document.sendin.submit();
+   return false;
+	    }
+	//-->
+	</script>
+$(endif)
+<div class="topnav">
+<span style="margin-right: 0.2%;" class="headernum">خدمة العملاء : 733144555-774555551-771141555</span>
+<span style="color: #e85e41; float: left;margin-left: 2%;" class="headerfree">$(if trial == 'yes')سلفني:<a onclick="removecookie();" href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)" style="display: contents;">إضغط هنا</a>$(endif)
+$(if trial == 'no') قم بسداد السلفة اولا $(endif)
+</span>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="#home" style="background-color: #fff;"><img src="img/logo.png"  width="150px"/></a>
+  
+  <a href="contant.html" class="lef">اتصل بنا</a>
+
+  <a href="about.html" class="lef">جديد الخدمات</a>
+  <a href="cellpoint.html" class="lef">نقاط البيع</a>
+  <a href="offers.html" class="lef">الاسعار</a>
+
+  <a href="#" class="lef" style="color: #e85e41 !important;">الرئيسية</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <img style="width: 30px;" src="img/m.png" />
+  </a>
+</div>
+<marquee direction="right" style="height: 50px;padding: 10px;">قم بالاطلاع على جديد خدماتنا المذهلة مثل سلفني والكثير من الخدمات بالضغط على خانة جديد الخدمات</marquee>
+<br>
+<div class="divlogin">
+  <button class="tablink" onclick="openPage('Home', this, '#e85e41', '#fff')" id="defaultOpen" >شبـكـة شـكـري واي فـاي</button>
+
+
+<div id="Home" class="tabcontent">
+  
+  <div class="imgcontainer">
+    <img src="img/mano.png" class="avatar">
+  </div>
+
+  <div class="container">
+  <br><br>
+    
+						<form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+						<label for="uname"><b style="font-size: 150%;">شبـكـة شـكـري واي فـاي</b></label>
+	<br><br><br>
+										<input id="uname" name="username" type="text" placeholder="إدخل رمز البطاقة هنا" required>
+							
+								
+										
+							<button type="submit" class="buttonform" onclick='return rem();'>تسجيل الدخول</button>
+					</form>
+	<button type="submit" class="buttonform" style="background-color:#d1002c;">تحميل تطبيق البث المباشر</button>
+    <label>
+      <input type="hidden" checked="checked" name="remember">
+    </label>
+  </div>
+
+
+
+</div>
+
+<div id="News" class="tabcontent">
+  
+  <div class="imgcontainer">
+    <img src="img/usrpas.png" class="avatar">
+  </div>
+
+  <div class="container">
+  <br><br>
+   
+	<form name="login" action="$(link-login-only)" method="post"
+					    $(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+						 <label for="uname"><b>إسم المستخدم وكلمة المرور</b></label>
+	<br><br><br>
+    <input type="text" placeholder="إسم المستخدم" name="username" required>
+
+    
+    <input type="password" placeholder="كلمة المرور" name="password" required>
+        
+    <button type="submit" class="buttonform" value="OK">تسجيل الدخول</button>
+	</form>
+	<button type="submit" class="buttonform" style="background-color:#d1002c;">تحميل تطبيق البث المباشر</button>
+    <label>
+      <input type="hidden" checked="checked" name="remember">
+    </label>
+  </div>
+
+
+
+</div>
+
+<div class="footer">
+  <p>للتواصل والاستفسار : 771141555-774555551-733144555</p>
+  <div class="footer topnav" style="background-color:#1d1930; height:90px">
+  <span style="float: right;margin-right: 1%;" class="headernum">Designed by  Ahmed-Alnahari  +967772605107</span>
+<span style=" float: left;margin-left: 2%;" class="headerfree">العودة للاعلى</span>
+</div>
+</div>
+$(if error)
+   <div id="alert-back3" onclick="document.getElementById('alert-back3').style.display = ('none')">
+   <div class="alert3">
+   <span class="closebtn3"><strong style="font-size: 2rem;">×</strong></span>
+   <strong>خطأ!</strong><br> <script type="text/javascript">
+   var mac = "T-$(mac)";
+		var usr = "$(username)";
+			if (mac == usr) {
+			document.write("عذرا .. انت غير مسموح لك ب استخدام السلفة لانك لم تستخدم 5 كروت من قبل");
+			}
+			else
+var error = "$(error)";
+if (error == "simultaneous session limit reached") {
+document.write("المعذرة ، هذا الحساب مستخدم حالياً في جهاز آخر");
+}
+else if (error == "invalid username or password") {
+document.write("تاكد من كتابة الرمز بشكل صحيح");
+}
+else if (error == "access denied at this time") {
+document.write("حساب  إستخدام ليلي لا يمكن استخدامها في هذا الوقت");
+}
+else if (error == "uptime limit reached") {
+document.write("عذراً لقد انتهى الوقت المتاح لك..");
+}
+else if (error == "invalid password") {
+document.write(" كلمة المرور خاطئة");
+}
+else if (error == "no more sessions are allowed for user $(username)") {
+document.write("الحساب مستخدم حاليا في جهاز اخر او ان هناك مشكلة .. يرجى اغلاق الواي فاي لمدة 5 دقائق ثم اعادة المحاولة");
+}
+else if (error == "no valid profile found") {
+document.write("لقد أنتهت صلاحية هذا الحساب");
+}
+else if (error == "transfer limit reached") {
+document.write("لقد أنتهى رصيد التحميل لهذا الحساب ");
+}
+else if (error == "user $(username) has reached traffic limit") {
+document.write("لقد أنتهى رصيد التحميل لهذا الحساب");
+}
+else if (error == "user $(username) is not allowed to log in from this MAC address") {
+document.write("رمز الدخول خاص بجهاز اخر لايمكن استخدامة في جهازك ");
+}
+else if(error.search("not found") != -1) {
+document.write("أنتهى رصيدك من الوقت أو الصلاحية / أو تأكد من كتابة الرمز");
+}
+else if (error == "invalid Calling-Station-Id") {
+document.write("رمز الدخول خاص بجهاز اخر لايمكن استخدامة في جهازك");
+}
+else if (error == "radius timeout") {
+document.write("عزيزي المشترك نعتذر عن انقطاع الخدمة بسبب الصيانة سيتم اعادة الخدمة خلال دقائق");
+}
+
+else document.write("$(error)<br />")
+   </script>
+   </div>
+   </div>
+   $(endif)
+<script>
+function openPage(pageName,elmnt,color,color1) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+    tablinks[i].style.color = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+  elmnt.style.color = color1;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
